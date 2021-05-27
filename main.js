@@ -15,27 +15,27 @@ signBtn.addEventListener("click", function(event){
         if (fieldName=== "firstname"){
             const errorDiv=document.getElementById(fieldName + "-error"); 
             if(stringValue.length>=2) {
-                errorDiv.innerText="";
+                errorDiv.textContent="";
             }else {
-                errorDiv.innerText="firstname must be at least two characters";
+                errorDiv.textContent="firstname must be at least two characters";
             }
         }
 
         if (fieldName=== "email"){
             const errorDiv=document.getElementById(fieldName + "-error"); 
             if(stringValue.includes("@")) {
-                errorDiv.innerText="";
+                errorDiv.textContent="";
             }else {
-                errorDiv.innerText="your emailadress needs a @";
+                errorDiv.textContent="your emailadress needs a @";
             }
         }
 
         if (fieldName=== "password"){
             const errorDiv=document.getElementById(fieldName + "-error"); 
             if(stringValue.length>=6) {
-                errorDiv.innerText="";
+                errorDiv.textContent="";
             }else {
-                errorDiv.innerText="your password is too short";
+                errorDiv.textContent="your password is too short";
             }
         }
 
@@ -43,9 +43,9 @@ signBtn.addEventListener("click", function(event){
             const errorDiv=document.getElementById(fieldName + "-error"); 
             const passwordToCheck=document.getElementById("password");
             if(stringValue===passwordToCheck.value) {
-                errorDiv.innerText="";
+                errorDiv.textContent="";
             }else {
-                errorDiv.innerText="your passwords doesn't match";
+                errorDiv.textContent="your passwords doesn't match";
             }
         }
 
