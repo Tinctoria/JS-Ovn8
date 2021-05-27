@@ -1,0 +1,22 @@
+form {
+    width: 40%; 
+    margin: 2rem;
+    display: flex; 
+    flex-direction: column;
+}
+label {
+    margin-top:1rem;
+}
+
+button {
+    margin-top: 1rem; 
+    width: 20%; 
+}
+
+.error {
+    display:flex;
+    justify-content: center;
+    background-color: red;
+    color: white; 
+    font-weight:bold;
+}
